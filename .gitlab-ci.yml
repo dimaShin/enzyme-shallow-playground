@@ -1,0 +1,16 @@
+image: docker-registry.prod.williamhill.plc/central-git-yarn-lerna-ci-node10
+
+stages:
+  - test
+
+test:
+  stage: test
+  except:
+    - tags
+  artifacts:
+    paths: [ "node_modules", "packages/*/node_modules" ]
+    expire_in: 10 mins
+  script:
+    - yarn --no-interactive
+    - yarn test
+  tags: [ central-services ]

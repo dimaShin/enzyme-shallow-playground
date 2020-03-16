@@ -1,0 +1,35 @@
+{
+  "name": "react15-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dmytro.Yashyn",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^15.6.0"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "setupFiles": [
+      "<rootDir>/test-setup.js"
+    ]
+  }
+}
